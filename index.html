@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <title>WebTV</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="pin-gate" class="pin-gate" aria-label="접근 암호 입력">
+    <div class="pin-card">
+      <div class="lock-icon">●</div>
+      <p class="eyebrow">PRIVATE TV</p>
+      <h1>암호를 입력하세요</h1>
+      <p class="pin-help">리모컨 숫자키로 4자리 암호를 입력하세요.</p>
+      <div id="pin-dots" class="pin-dots" aria-live="polite"><span></span><span></span><span></span><span></span></div>
+      <div id="pin-message" class="pin-message">숫자키 0–9 · Back 지우기</div>
+      <div class="pin-pad" aria-label="화면 숫자 키패드">
+        <button data-pin="1">1</button><button data-pin="2">2</button><button data-pin="3">3</button>
+        <button data-pin="4">4</button><button data-pin="5">5</button><button data-pin="6">6</button>
+        <button data-pin="7">7</button><button data-pin="8">8</button><button data-pin="9">9</button>
+        <button class="pin-clear" data-pin-clear>지우기</button><button data-pin="0">0</button><button data-pin-enter>확인</button>
+      </div>
+    </div>
+  </section>
+  <header class="topbar">
+    <div class="brand"><span class="live-dot"></span><span>WEB TV</span></div>
+    <div id="clock" class="clock" aria-label="현재 시간"></div>
+  </header>
+
+  <main>
+    <section id="guide" class="guide" aria-label="채널 목록">
+      <div class="hero">
+        <p class="eyebrow">LIVE CHANNELS</p>
+        <h1>무엇을 시청할까요?</h1>
+        <p>방향키로 이동하고 Enter를 눌러 재생하세요. 숫자키로 채널을 바로 선택할 수 있습니다.</p>
+      </div>
+      <nav id="categories" class="categories" aria-label="카테고리"></nav>
+      <div id="status" class="status" role="status">채널을 불러오는 중…</div>
+      <div id="channel-grid" class="channel-grid"></div>
+    </section>
+
+    <section id="player-view" class="player-view" aria-hidden="true">
+      <div class="player-stage">
+        <video id="video" controls autoplay playsinline></video>
+        <iframe id="web-player" title="채널 플레이어" allow="autoplay; fullscreen; encrypted-media" allowfullscreen></iframe>
+        <div id="player-message" class="player-message"></div>
+      </div>
+      <div class="now-playing">
+        <div><span id="now-number" class="now-number"></span><strong id="now-name"></strong></div>
+        <span class="key-help">Back: 채널 목록</span>
+      </div>
+    </section>
+  </main>
+
+  <div id="number-overlay" class="number-overlay" aria-live="polite"></div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

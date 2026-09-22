@@ -1,0 +1,22 @@
+[[headers]]
+  for = "/channels.json"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=60, must-revalidate"
+
+[[headers]]
+  for = "/.netlify/functions/channels"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=60, s-maxage=60, stale-while-revalidate=300"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

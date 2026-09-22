@@ -1,0 +1,1451 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-22",
+  "source": "https://webtv.dothome.co.kr/",
+  "notes": [
+    "playback_url은 원본 페이지에 직접 노출된 HLS 주소입니다.",
+    "page_url은 YouTube 임베드, 단축 URL 또는 공급사 페이지이며 직접 재생 주소가 아닐 수 있습니다.",
+    "source_action은 원본 페이지의 동적 팝업 호출로 직접 URL을 정적으로 확인하지 못한 항목입니다.",
+    "채널 주소는 제공자 사정에 따라 변경되거나 만료될 수 있습니다."
+  ],
+  "channels": [
+    {
+      "id": "ch-001",
+      "name": "KBS1",
+      "number": 1,
+      "category": "지상파·종편·뉴스",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:11",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-002",
+      "name": "KBS2",
+      "number": 2,
+      "category": "지상파·종편·뉴스",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:12",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-003",
+      "name": "대구MBC",
+      "number": 3,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/dN4",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-004",
+      "name": "대전MBC",
+      "number": 4,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/bNq",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-005",
+      "name": "CJB",
+      "number": 5,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/d7Y",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-006",
+      "name": "서울경제TV",
+      "number": 6,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://www.youtube.com/embed/ciA-0rInLwQ?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-007",
+      "name": "JTBC",
+      "number": 7,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/d8a",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-008",
+      "name": "채널A",
+      "number": 8,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/bMV",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-009",
+      "name": "TV조선",
+      "number": 9,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/dwk",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-010",
+      "name": "MBN",
+      "number": 10,
+      "category": "지상파·종편·뉴스",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popMBN",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-011",
+      "name": "KBS뉴스",
+      "number": 11,
+      "category": "지상파·종편·뉴스",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBSNews",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-012",
+      "name": "MBC뉴스",
+      "number": 12,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://www.youtube.com/embed/q9bM12ucTIY?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-013",
+      "name": "SBS뉴스",
+      "number": 13,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://news.sbs.co.kr/news/live.do?plink=GNB&cooper=SBSNEWS",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-014",
+      "name": "연합뉴스경제TV",
+      "number": 14,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://www.youtube.com/embed/yhpbioCP6nA?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-015",
+      "name": "이벤트1",
+      "number": 15,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/jQe",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-016",
+      "name": "문화방송",
+      "number": 16,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/kky",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-017",
+      "name": "서울방송",
+      "number": 17,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/kkz",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-018",
+      "name": "이벤트2",
+      "number": 18,
+      "category": "지상파·종편·뉴스",
+      "page_url": "https://xzx.kr/jQf",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-019",
+      "name": "KBS NEWS 24",
+      "number": 19,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:81",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-020",
+      "name": "KBS DRAMA",
+      "number": 20,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:N91",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-021",
+      "name": "KBS JOY",
+      "number": 21,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:N92",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-022",
+      "name": "KBS STORY",
+      "number": 22,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:N94",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-023",
+      "name": "KBS LIFE",
+      "number": 23,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:N93",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-024",
+      "name": "KBS KIDS",
+      "number": 24,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:N96",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-025",
+      "name": "KBS WORLD TV",
+      "number": 25,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:14",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-026",
+      "name": "KBS LIVE Dokdo",
+      "number": 26,
+      "category": "예능·뉴스·엔터테인먼트",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:cctv01",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-027",
+      "name": "올 더 케이팝",
+      "number": 27,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/GaccTXdeRRI?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-028",
+      "name": "대탈출",
+      "number": 28,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/yNc5W-Bjpcw?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-029",
+      "name": "YTN",
+      "number": 29,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/aZyD6EPl6KU?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-030",
+      "name": "연합뉴스TV",
+      "number": 30,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/6QZ_qc75ihU?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-031",
+      "name": "푸른거탑+황금거탑",
+      "number": 31,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/H3uur6g_9CA?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-032",
+      "name": "호텔 델루나",
+      "number": 32,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/Wsz_If9wZ7g?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-033",
+      "name": "인기영화",
+      "number": 33,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://xzx.kr/gQ6",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-034",
+      "name": "YTN2",
+      "number": 34,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/g4z6U1yFGKk?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-035",
+      "name": "THE K-POP",
+      "number": 35,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/JVocS7Yftw8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-036",
+      "name": "렛츠고 시간탐험대",
+      "number": 36,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/vuJoalX0ke4?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-037",
+      "name": "벌거벗은 세계사",
+      "number": 37,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/b5UeAVqz4cI?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-038",
+      "name": "런닝맨",
+      "number": 38,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/d8OvbUAxaec?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-039",
+      "name": "YTN dmb",
+      "number": 39,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/2C2WCLhDsR4?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-040",
+      "name": "한강",
+      "number": 40,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/RVvYQghFCXk?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-041",
+      "name": "사극",
+      "number": 41,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/1bROU5AqM8w?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-042",
+      "name": "토마토클래식",
+      "number": 42,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/Bc4zsrcMsro?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-043",
+      "name": "똑바로 살아라",
+      "number": 43,
+      "category": "예능·뉴스·엔터테인먼트",
+      "page_url": "https://www.youtube.com/embed/DR9Lzmyftwc?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-044",
+      "name": "SBS GOLF",
+      "number": 44,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQg",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-045",
+      "name": "SBS GOLF2",
+      "number": 45,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQh",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-046",
+      "name": "JTBC GOLF",
+      "number": 46,
+      "category": "스포츠·레저",
+      "page_url": "https://www.youtube.com/embed/y0Fa_lEljWQ?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-047",
+      "name": "JTBC 스포츠",
+      "number": 47,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jR6",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-048",
+      "name": "야구장 날씨",
+      "number": 48,
+      "category": "스포츠·레저",
+      "page_url": "https://www.koreabaseball.com/Schedule/Weather.aspx",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-049",
+      "name": "스포츠1",
+      "number": 49,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQk",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-050",
+      "name": "스포츠2",
+      "number": 50,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQm",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-051",
+      "name": "스포츠3",
+      "number": 51,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQn",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-052",
+      "name": "스포츠4",
+      "number": 52,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQp",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-053",
+      "name": "스포츠5",
+      "number": 53,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQq",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-054",
+      "name": "네이버 농구",
+      "number": 54,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.news.naver.com/basketball/schedule/index",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-055",
+      "name": "다음 농구",
+      "number": 55,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.daum.net/schedule/basketball",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-056",
+      "name": "네이버 배구",
+      "number": 56,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.news.naver.com/volleyball/schedule/index",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-057",
+      "name": "다음 배구",
+      "number": 57,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.daum.net/schedule/volleyball",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-058",
+      "name": "네이버 골프",
+      "number": 58,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.news.naver.com/golf/schedule/index",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-059",
+      "name": "네이버 야구",
+      "number": 59,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.news.naver.com/kbaseball/schedule/index",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-060",
+      "name": "다음 야구",
+      "number": 60,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.daum.net/schedule/kbo",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-061",
+      "name": "네이버 축구",
+      "number": 61,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.news.naver.com/kfootball/schedule/index",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-062",
+      "name": "다음 축구",
+      "number": 62,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.daum.net/schedule/soccer",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-063",
+      "name": "다음 골프",
+      "number": 63,
+      "category": "스포츠·레저",
+      "page_url": "https://sports.daum.net/schedule/kpga",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-064",
+      "name": "The Pet Collective",
+      "number": 64,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/ann",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-065",
+      "name": "Red Bull TV",
+      "number": 65,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQA",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-066",
+      "name": "Outside TV",
+      "number": 66,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/eX5",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-067",
+      "name": "Fun Roads TV",
+      "number": 67,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/anp",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-068",
+      "name": "피파플러스",
+      "number": 68,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jc2",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-069",
+      "name": "SBS Sports",
+      "number": 69,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/jQs",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-070",
+      "name": "해운대",
+      "number": 70,
+      "category": "스포츠·레저",
+      "page_url": "https://www.youtube.com/embed/LGuktGeHQxI?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-071",
+      "name": "송정해수욕장",
+      "number": 71,
+      "category": "스포츠·레저",
+      "page_url": "https://www.youtube.com/embed/6yc_wu4bLtc?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-072",
+      "name": "광안대교",
+      "number": 72,
+      "category": "스포츠·레저",
+      "page_url": "https://www.youtube.com/embed/jmVmZlsQIL8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-073",
+      "name": "한끼줍쇼",
+      "number": 73,
+      "category": "스포츠·레저",
+      "page_url": "https://xzx.kr/cxF",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-074",
+      "name": "EBS1",
+      "number": 74,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-075",
+      "name": "EBS2",
+      "number": 75,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-076",
+      "name": "EBS KIDS",
+      "number": 76,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-077",
+      "name": "EBS 플러스1",
+      "number": 77,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-078",
+      "name": "EBS 플러스2",
+      "number": 78,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-079",
+      "name": "EBS English",
+      "number": 79,
+      "category": "교육·키즈·교양",
+      "playback_url": "https://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-080",
+      "name": "YTN 사이언스",
+      "number": 80,
+      "category": "교육·키즈·교양",
+      "page_url": "https://www.youtube.com/embed/6FbEE0gmnrE?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-081",
+      "name": "KOCW",
+      "number": 81,
+      "category": "교육·키즈·교양",
+      "page_url": "https://www.kocw.net/home/index.do",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-082",
+      "name": "EBS MATH",
+      "number": 82,
+      "category": "교육·키즈·교양",
+      "page_url": "https://www.ebsmath.co.kr/",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-083",
+      "name": "Math Solver",
+      "number": 83,
+      "category": "교육·키즈·교양",
+      "page_url": "https://www.google.com/search?q=math+solver",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-084",
+      "name": "짱구",
+      "number": 84,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/cz9",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-085",
+      "name": "요리왕 비룡",
+      "number": 85,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czB",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-086",
+      "name": "핑크퐁",
+      "number": 86,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czC",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-087",
+      "name": "베베핀",
+      "number": 87,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czD",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-088",
+      "name": "극한직업",
+      "number": 88,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czA",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-089",
+      "name": "키즈 타임",
+      "number": 89,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eqA",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-090",
+      "name": "코난 오브라이언 쇼",
+      "number": 90,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eqC",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-091",
+      "name": "영화 리뷰",
+      "number": 91,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eqN",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-092",
+      "name": "미스터 빈",
+      "number": 92,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eq9",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-093",
+      "name": "바오 패밀리",
+      "number": 93,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eq8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-094",
+      "name": "뽀요TV",
+      "number": 94,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czE",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-095",
+      "name": "코코비TV",
+      "number": 95,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czF",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-096",
+      "name": "로보카폴리",
+      "number": 96,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czG",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-097",
+      "name": "벌거벗은 세계사",
+      "number": 97,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/eqB",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-098",
+      "name": "방송대학TV",
+      "number": 98,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/czJ",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-099",
+      "name": "명탐정 코난",
+      "number": 99,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/c7r",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-100",
+      "name": "어린이 만화동산",
+      "number": 100,
+      "category": "교육·키즈·교양",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:nvod10",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-101",
+      "name": "역사저널 그날",
+      "number": 101,
+      "category": "교육·키즈·교양",
+      "source_url": "https://webtv.dothome.co.kr/",
+      "source_action": "popKBS:nvod8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-102",
+      "name": "K-ASMR",
+      "number": 102,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/c7q",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-103",
+      "name": "TED",
+      "number": 103,
+      "category": "교육·키즈·교양",
+      "page_url": "https://xzx.kr/c7p",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-104",
+      "name": "CBS",
+      "number": 104,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/cxtw2RuOYac?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-105",
+      "name": "CTS기독교TV",
+      "number": 105,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/gam",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-106",
+      "name": "CGN",
+      "number": 106,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/jkT",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-107",
+      "name": "C채널",
+      "number": 107,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/CDFzYy3a4v8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-108",
+      "name": "GOODTV",
+      "number": 108,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/ds7",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-109",
+      "name": "가톨릭 평화방송",
+      "number": 109,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/jQ5",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-110",
+      "name": "BBS불교방송",
+      "number": 110,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/ds8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-111",
+      "name": "BTN 불교TV",
+      "number": 111,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/dsA",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-112",
+      "name": "원음방송",
+      "number": 112,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/jQ7",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-113",
+      "name": "연합뉴스TV JOB",
+      "number": 113,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/WV9oNOhnLf8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-114",
+      "name": "TBS",
+      "number": 114,
+      "category": "종교·지역·공공·경제",
+      "playback_url": "https://cdntv.tbs.seoul.kr/tbs/_definst_/tbs_tv_web_720.smil/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-115",
+      "name": "딜라이브TV",
+      "number": 115,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/dsC",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-116",
+      "name": "ABN",
+      "number": 116,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/anq",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-117",
+      "name": "CCS충북방송",
+      "number": 117,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/b8d",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-118",
+      "name": "KCTV제주방송",
+      "number": 118,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/anr",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-119",
+      "name": "OBS",
+      "number": 119,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/jQ9",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-120",
+      "name": "Btv 인천",
+      "number": 120,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/atP",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-121",
+      "name": "서경방송",
+      "number": 121,
+      "category": "종교·지역·공공·경제",
+      "playback_url": "https://live.iscs.co.kr/m_live/480p.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-122",
+      "name": "토마토리빙",
+      "number": 122,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/M7a5wVnkcug?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-123",
+      "name": "머니투데이방송",
+      "number": 123,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/lb1oB2feqkQ?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-124",
+      "name": "국악방송",
+      "number": 124,
+      "category": "종교·지역·공공·경제",
+      "playback_url": "https://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-125",
+      "name": "복지TV",
+      "number": 125,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/dsD",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-126",
+      "name": "한국경제TV",
+      "number": 126,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/VlaCnp1fxI8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-127",
+      "name": "이데일리TV",
+      "number": 127,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/5cFoz90FUMk?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-128",
+      "name": "매일경제TV",
+      "number": 128,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://www.youtube.com/embed/s9xL1DpBsfQ?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-129",
+      "name": "KTV",
+      "number": 129,
+      "category": "종교·지역·공공·경제",
+      "playback_url": "https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-130",
+      "name": "국회방송",
+      "number": 130,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/krG",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-131",
+      "name": "KFN",
+      "number": 131,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/dsE",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-132",
+      "name": "Arirang TV",
+      "number": 132,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/dsB",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-133",
+      "name": "한국농업방송",
+      "number": 133,
+      "category": "종교·지역·공공·경제",
+      "page_url": "https://xzx.kr/j7Z",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-134",
+      "name": "GS샵",
+      "number": 134,
+      "category": "홈쇼핑",
+      "playback_url": "http://gstv-gsshop.gsshop.com/gsshop_hd/_definst_/gsshop_hd.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-135",
+      "name": "GS마이샵",
+      "number": 135,
+      "category": "홈쇼핑",
+      "playback_url": "http://gstv-myshop.gsshop.com/myshop_hd/_definst_/myshop_hd.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-136",
+      "name": "현대홈쇼핑",
+      "number": 136,
+      "category": "홈쇼핑",
+      "playback_url": "https://livejj.hyundaihmall.com:8443/live/ngrp:hmall.stream_pc/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-137",
+      "name": "현대홈쇼핑+샵",
+      "number": 137,
+      "category": "홈쇼핑",
+      "playback_url": "https://dtvstreaming.hyundaihmall.com/newcjp3/_definst_/newcjpstream.smil/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-138",
+      "name": "NS홈쇼핑",
+      "number": 138,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt4",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-139",
+      "name": "CJ온스타일",
+      "number": 139,
+      "category": "홈쇼핑",
+      "playback_url": "http://live-ch1.cjonstyle.net/cjmalllive/_definst_/stream2/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-140",
+      "name": "CJ온스타일+",
+      "number": 140,
+      "category": "홈쇼핑",
+      "playback_url": "http://live-ch2.cjmall.net/cjosplus/_definst_/live2/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-141",
+      "name": "롯데홈쇼핑",
+      "number": 141,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt5",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-142",
+      "name": "롯데OneTV",
+      "number": 142,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt6",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-143",
+      "name": "NS Shop+",
+      "number": 143,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt7",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-144",
+      "name": "W쇼핑",
+      "number": 144,
+      "category": "홈쇼핑",
+      "playback_url": "http://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-145",
+      "name": "신세계쇼핑",
+      "number": 145,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-146",
+      "name": "쇼핑엔티",
+      "number": 146,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dt9",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-147",
+      "name": "공영쇼핑",
+      "number": 147,
+      "category": "홈쇼핑",
+      "playback_url": "http://etv.publichs.com/live5.stream/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-148",
+      "name": "SK스토아",
+      "number": 148,
+      "category": "홈쇼핑",
+      "page_url": "https://xzx.kr/dtA",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-149",
+      "name": "KT알파 쇼핑",
+      "number": 149,
+      "category": "홈쇼핑",
+      "playback_url": "https://livetv.kshop.co.kr/klive/_definst_/smil:klive.smil/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-150",
+      "name": "홈앤쇼핑",
+      "number": 150,
+      "category": "홈쇼핑",
+      "playback_url": "https://s30.qtcdn.co.kr/media/liveM3U8/idx/484074138/enc/1790577012/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-151",
+      "name": "FRANCE 24",
+      "number": 151,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/HvZt-nh9sGg?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-152",
+      "name": "Bloomberg",
+      "number": 152,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/QB5BNdBFujE?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-153",
+      "name": "CBSN",
+      "number": 153,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/jjf",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-154",
+      "name": "NTV News 24",
+      "number": 154,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/t9kwjZBLI-A?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-155",
+      "name": "CGN Japan",
+      "number": 155,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/jkU",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-156",
+      "name": "Shibuya Crossing",
+      "number": 156,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/dfVK7ld38Ys?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-157",
+      "name": "TBS NEWS DIG",
+      "number": 157,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/Anr15FA9OCI?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-158",
+      "name": "NHK WORLD",
+      "number": 158,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/IimtbuqYIE8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-159",
+      "name": "ANN",
+      "number": 159,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-160",
+      "name": "NBN",
+      "number": 160,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/-C6FE2m7kX8?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-161",
+      "name": "KTS",
+      "number": 161,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/j0SW3bmbiMc?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-162",
+      "name": "Shop Channel",
+      "number": 162,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/dtB",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-163",
+      "name": "QVC",
+      "number": 163,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/haFjd0713ZQ?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-164",
+      "name": "GB News",
+      "number": 164,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/I8E6eDmhegY?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-165",
+      "name": "K-POP",
+      "number": 165,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/ant",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-166",
+      "name": "Kronehit TV",
+      "number": 166,
+      "category": "해외·글로벌",
+      "playback_url": "https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-167",
+      "name": "Classic Arts Showcase",
+      "number": 167,
+      "category": "해외·글로벌",
+      "playback_url": "https://classicarts.akamaized.net/hls/live/1024257/CAS/master.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-168",
+      "name": "Rock x Metal",
+      "number": 168,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/dtD",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-169",
+      "name": "G.I. JOE",
+      "number": 169,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/TZ3mxF4U__k?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-170",
+      "name": "CNA",
+      "number": 170,
+      "category": "해외·글로벌",
+      "playback_url": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-171",
+      "name": "Cheddar",
+      "number": 171,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/kmr",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-172",
+      "name": "GFC",
+      "number": 172,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/kms",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-173",
+      "name": "Wonder",
+      "number": 173,
+      "category": "해외·글로벌",
+      "playback_url": "https://wonder-samsung-uk.amagi.tv/playlist.m3u8",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-174",
+      "name": "LX Home",
+      "number": 174,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/anu",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-175",
+      "name": "9XM",
+      "number": 175,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/anv",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-176",
+      "name": "ABC News",
+      "number": 176,
+      "category": "해외·글로벌",
+      "page_url": "https://www.youtube.com/embed/iipR5yUp36o?autoplay=1",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-177",
+      "name": "NBC News",
+      "number": 177,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/anw",
+      "source_page": "https://webtv.dothome.co.kr/"
+    },
+    {
+      "id": "ch-178",
+      "name": "Tv Groovy",
+      "number": 178,
+      "category": "해외·글로벌",
+      "page_url": "https://xzx.kr/dtE",
+      "source_page": "https://webtv.dothome.co.kr/"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "WebTV 리모컨 플레이어",
+  "short_name": "WebTV",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "icons": [{"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
