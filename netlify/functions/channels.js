@@ -66,6 +66,25 @@ function decodeURIComponentSafe(value) {
 async function resolveDynamic(item) {
   const action = item.source_action || "";
   try {
+    if (item.name === "SBS뉴스") {
+      return {
+        ...item,
+        page_url:"https://www.youtube.com/embed/live_stream?channel=UCkinYTS9IHqOEwR1Sze2JTw&autoplay=1&playsinline=1&rel=0",
+        resolved_from:"SBS News official YouTube live channel",
+        source_url:undefined,
+        source_action:undefined
+      };
+    }
+    if (item.name === "서울방송" || item.page_url === "https://xzx.kr/kkz") {
+      return {
+        ...item,
+        playback_url:"https://tistory1.daumcdn.net/tistory/2864460/skin/images/CATV_2_76142D8F1.m3u8",
+        page_url:undefined,
+        resolved_from:"SBS source redirect",
+        source_url:undefined,
+        source_action:undefined
+      };
+    }
     if (action.startsWith("popKBS:")) {
       const code = encodeURIComponent(action.slice("popKBS:".length));
       const data = JSON.parse(await fetchText(`https://cfpwwwapi.kbs.co.kr/api/v1/landing/live/channel_code/${code}`));
@@ -105,7 +124,7 @@ exports.handler = async function () {
   try {
     channels = await buildLiveChannels();
   } catch (error) {
-    channels = fallbackData.channels;
+    channels = await Promise.all(fallbackData.channels.map(resolveDynamic));
     live = false;
     warning = "원본 사이트 갱신에 실패하여 배포 시 포함된 채널 목록을 반환했습니다.";
   }
