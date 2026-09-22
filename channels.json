@@ -114,7 +114,7 @@
       "name": "SBS뉴스",
       "number": 13,
       "category": "지상파·종편·뉴스",
-      "page_url": "https://news.sbs.co.kr/news/live.do?plink=GNB&cooper=SBSNEWS",
+      "page_url": "https://www.youtube.com/embed/live_stream?channel=UCkinYTS9IHqOEwR1Sze2JTw&autoplay=1&playsinline=1&rel=0",
       "source_page": "https://webtv.dothome.co.kr/"
     },
     {
@@ -146,7 +146,7 @@
       "name": "서울방송",
       "number": 17,
       "category": "지상파·종편·뉴스",
-      "page_url": "https://xzx.kr/kkz",
+      "playback_url": "https://tistory1.daumcdn.net/tistory/2864460/skin/images/CATV_2_76142D8F1.m3u8",
       "source_page": "https://webtv.dothome.co.kr/"
     },
     {
