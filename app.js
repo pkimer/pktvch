@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   var cfg = window.TV_APP_CONFIG || {};
-  var state = { channels: [], filtered: [], category: "전체", numeric: "", numericTimer: null, lastFocus: null, unlocked: false, pinInput: "" };
+  var state = { channels: [], filtered: [], category: "전체", numeric: "", numericTimer: null, lastFocus: null, unlocked: false, pinInput: "", openToken: 0 };
   var pinGate = document.getElementById("pin-gate");
   var pinDots = document.getElementById("pin-dots");
   var pinMessage = document.getElementById("pin-message");
@@ -64,6 +64,14 @@
     return Promise.resolve(ch);
   }
 
+  function latestChannel(ch) {
+    var base=channelUrl();
+    if(base.indexOf("/.netlify/functions/channels")<0) return resolveDynamicChannel(Object.assign({},ch));
+    var join=base.indexOf("?")>=0?"&":"?";
+    var url=base+join+"resolve=1&id="+encodeURIComponent(ch.id||"")+"&number="+encodeURIComponent(ch.number||"")+"&name="+encodeURIComponent(ch.name||"");
+    return fetchJson(url).then(function(data){return data&&data.channel?data.channel:ch;});
+  }
+
   function renderCategories() {
     var values = ["전체"];
     state.channels.forEach(function (ch) { if (values.indexOf(ch.category) < 0) values.push(ch.category); });
@@ -100,8 +108,23 @@
       .finally(function(){ clearTimeout(timer); });
   }
 
+  function showChannel(ch) {
+    video.className=""; frame.className=""; message.className="player-message";
+    video.pause(); video.removeAttribute("src"); video.load(); frame.src="about:blank";
+    if (ch.playback_url) {
+      video.className="active"; video.src=ch.playback_url;
+      var promise=video.play(); if(promise&&promise.catch) promise.catch(function(){ message.className="player-message active"; message.textContent="재생을 시작하려면 Enter를 눌러 주세요."; });
+    } else if (ch.page_url) {
+      frame.className="active"; frame.src=ch.page_url;
+    } else {
+      message.className="player-message active";
+      message.textContent="최신 주소를 확인했지만 TV에서 직접 재생할 수 있는 주소를 찾지 못했습니다.";
+    }
+  }
+
   function openChannel(ch) {
     if (!ch) return;
+    var token=++state.openToken;
     state.lastFocus = document.activeElement;
     document.getElementById("now-number").textContent = "CH "+String(ch.number).padStart(3,"0");
     document.getElementById("now-name").textContent = ch.name;
@@ -109,21 +132,15 @@
     if (!history.state || history.state.view !== "player") {
       history.pushState({ view:"player", channelId:ch.id }, "", "#channel-"+encodeURIComponent(ch.id));
     }
-    video.className=""; frame.className=""; message.className="player-message";
+    video.className=""; frame.className=""; message.className="player-message active";
     video.pause(); video.removeAttribute("src"); video.load(); frame.src="about:blank";
-    if (ch.playback_url) {
-      video.className="active"; video.src=ch.playback_url;
-      var promise=video.play(); if(promise&&promise.catch) promise.catch(function(){ message.textContent="재생을 시작하려면 Enter를 눌러 주세요."; });
-    } else if (ch.page_url) {
-      frame.className="active"; frame.src=ch.page_url;
-    } else {
-      message.className="player-message active";
-      message.textContent="이 채널은 원본 사이트의 동적 재생 방식입니다. 직접 재생 URL이 없어 TV 앱 내부에서 바로 재생할 수 없습니다.";
-    }
+    message.textContent="원본 사이트에서 최신 채널 주소를 확인하고 있습니다…";
+    latestChannel(ch).then(function(latest){if(token!==state.openToken||!playerView.classList.contains("active"))return;showChannel(latest);}).catch(function(){if(token!==state.openToken||!playerView.classList.contains("active"))return;message.textContent="최신 주소 조회에 실패하여 저장된 주소로 재생합니다.";setTimeout(function(){if(token===state.openToken)showChannel(ch);},700);});
   }
 
   function closePlayer(fromHistory) {
     if (!playerView.classList.contains("active")) return false;
+    state.openToken++;
     if (!fromHistory && history.state && history.state.view === "player") {
       history.back();
       return true;

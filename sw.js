@@ -1,4 +1,4 @@
-var CACHE="webtv-shell-v5-server-resolver";
+var CACHE="webtv-shell-v6-on-demand-resolver";
 var SHELL=["./","./index.html","./styles.css","./app.js","./config.js","./manifest.webmanifest","./icons/icon.svg"];
 self.addEventListener("install",function(e){e.waitUntil(caches.open(CACHE).then(function(c){return c.addAll(SHELL);}));self.skipWaiting();});
 self.addEventListener("activate",function(e){e.waitUntil(caches.keys().then(function(keys){return Promise.all(keys.filter(function(k){return k!==CACHE;}).map(function(k){return caches.delete(k);}));}));self.clients.claim();});
