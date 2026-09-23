@@ -117,7 +117,43 @@ async function buildLiveChannels() {
   return Promise.all(parsed.map(resolveDynamic));
 }
 
-exports.handler = async function () {
+async function findLatestChannel(query) {
+  const home = await fetchText(ROOT);
+  const decoded = decodeURIComponentSafe(home);
+  const scriptUrls = [...new Set(decoded.match(/https:\/\/[^"<> ]+?\/webtv_tv_[^"<> ]+?\.js/g) || [])];
+  if (!scriptUrls.length) throw new Error("Channel scripts were not found");
+  const sources = await Promise.all(scriptUrls.map(url => fetchText(url)));
+  const parsed = parseChannelScripts(sources);
+  const number = Number(query.number);
+  const found = parsed.find(item => query.id && item.id === query.id)
+    || parsed.find(item => Number.isFinite(number) && item.number === number && (!query.name || item.name === query.name))
+    || parsed.find(item => query.name && item.name === query.name);
+  if (!found) throw new Error("Channel was not found in the current source list");
+  return resolveDynamic(found);
+}
+
+exports.handler = async function (event = {}) {
+  const query = event.queryStringParameters || {};
+  if (query.resolve === "1") {
+    try {
+      const channel = await findLatestChannel(query);
+      return {
+        statusCode: 200,
+        headers: {
+          "content-type": "application/json; charset=utf-8",
+          "access-control-allow-origin": "*",
+          "cache-control": "public, max-age=30, s-maxage=30, stale-while-revalidate=120"
+        },
+        body: JSON.stringify({ resolved_at:new Date().toISOString(), source:ROOT, channel })
+      };
+    } catch (error) {
+      return {
+        statusCode: 502,
+        headers: { "content-type":"application/json; charset=utf-8", "access-control-allow-origin":"*", "cache-control":"no-store" },
+        body: JSON.stringify({ error:"최신 채널 주소를 확인하지 못했습니다.", detail:error.name === "AbortError" ? "timeout" : error.message })
+      };
+    }
+  }
   let channels;
   let live = true;
   let warning;
