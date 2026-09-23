@@ -69,7 +69,11 @@
     if(base.indexOf("/.netlify/functions/channels")<0) return resolveDynamicChannel(Object.assign({},ch));
     var join=base.indexOf("?")>=0?"&":"?";
     var url=base+join+"resolve=1&id="+encodeURIComponent(ch.id||"")+"&number="+encodeURIComponent(ch.number||"")+"&name="+encodeURIComponent(ch.name||"");
-    return fetchJson(url).then(function(data){return data&&data.channel?data.channel:ch;});
+    return fetchJson(url).then(function(data){
+      var latest=data&&data.channel?data.channel:ch;
+      if(!latest.playback_url&&!latest.page_url&&latest.source_action) return resolveDynamicChannel(latest);
+      return latest;
+    });
   }
 
   function renderCategories() {
